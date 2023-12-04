@@ -11,8 +11,11 @@ public class MajorityElementFinder {
             return result;
         }
 
+        // Step 1: Initialization
         int candidate1 = 0, candidate2 = 1;
         int count1 = 0, count2 = 0;
+
+        // Step 2: First Pass
         for (int num : nums) {
             if (num == candidate1) {
                 count1++;
@@ -30,6 +33,7 @@ public class MajorityElementFinder {
             }
         }
 
+        // Step 3: Second Pass
         count1 = 0;
         count2 = 0;
 
@@ -41,6 +45,7 @@ public class MajorityElementFinder {
             }
         }
 
+        // Step 4: Checking Majority Elements
         if (count1 > nums.length / 3) {
             result.add(candidate1);
         }
@@ -48,21 +53,24 @@ public class MajorityElementFinder {
             result.add(candidate2);
         }
 
+        // Step 5: Result
         return result;
     }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
+        // User input for array size
         int n = sc.nextInt();
 
+        // User input for array elements
         int[] nums = new int[n];
         for (int i = 0; i < n; i++) {
             nums[i] = sc.nextInt();
         }
 
+        // Calling the majorityElement method and printing the result
         List<Integer> res = majorityElement(nums);
         System.out.println(res);
     }
 }
-

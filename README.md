@@ -1,3 +1,3 @@
 # LoveLocal
-College - Alva's Institule of Engineering and Technology
+College - Alva's Institute of Engineering and Technology
 Email - vaishalisalian088@gmail.com

@@ -13,7 +13,6 @@ public class MajorityElementFinder {
 
         int candidate1 = 0, candidate2 = 1;
         int count1 = 0, count2 = 0;
-
         for (int num : nums) {
             if (num == candidate1) {
                 count1++;

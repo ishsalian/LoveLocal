@@ -6,7 +6,6 @@ public class ShortestPalindrome {
         if (s == null || s.isEmpty()) {
             return "";
         }
-
         // Build a new string by concatenating s, a special character, and the reversed s
         String newStr = s + "#" + new StringBuilder(s).reverse().toString();
 

@@ -31,7 +31,8 @@ public class ShortestPalindrome {
         //returning result to the main method
         return new StringBuilder(remaining).reverse().toString() + s;
     }
-    //main method of the program
+    
+    // Main method to take user input and demonstrate the functionality
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         //taking input string from user 

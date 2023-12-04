@@ -28,17 +28,16 @@ public class ShortestPalindrome {
 
         // The remaining part to be added in front of s
         String remaining = s.substring(prefix[newStr.length() - 1]);
-
+        //returning result to the main method
         return new StringBuilder(remaining).reverse().toString() + s;
     }
-
+    //main method of the program
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.print("Enter a string: ");
-        String userInput = scanner.nextLine();
-
-        String result = shortestPalindrome(userInput);
-        System.out.println("Shortest palindrome: " + result);
+        Scanner sc = new Scanner(System.in);
+        //taking input string from user 
+        String userInput = sc.nextLine();
+        //calling shortestPalindrome to find the shortest palindrome and storing it into variable res
+        String res = shortestPalindrome(userInput);
+        System.out.println(res);
     }
 }
